@@ -9,15 +9,18 @@ header {
   padding: 20px;
   background-color: rgba(30, 126, 179, 0.971);
   color: white;
+  
 }
 
 nav {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   background-color: #e8c546;
-  
-  padding: 10px;
+  margin-bottom: -20px;
+  width: 100%;
+  margin-left: -20px;
+  padding: 5px 20px ;
 }
 
 nav a {
