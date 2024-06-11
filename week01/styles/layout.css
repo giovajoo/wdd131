@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 main, aside {
-  flex: 1; /* Ambos ocuparán el mismo espacio */
+  flex: 1; 
   padding: 20px;
   
 }
