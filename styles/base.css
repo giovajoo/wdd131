@@ -71,7 +71,7 @@
     background-color: white;
     border-radius: 12px;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
     
    
@@ -169,7 +169,7 @@
   padding: 0;
   margin: 0; 
   text-align: center; 
-  margin-top: 40%;
+  margin-top: 45%;
 }
 
 .card ul li {
@@ -186,21 +186,10 @@
   font-family: "Quicksand", sans-serif;
 }
 
- 
-    
-
-  
-
-
-
-
-
-
-
   footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(30, 126, 179, 0.971);
+    background-color: rgba(10, 96, 142, 0.971);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
   }
