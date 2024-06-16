@@ -192,4 +192,21 @@
     background-color: rgba(10, 96, 142, 0.971);
     color: white;
     font-family: "Quicksand", sans-serif;
+
   }
+
+
+footer p {
+    margin: 5px 0; 
+    font-size: 17px; 
+}
+
+#currentyear {
+    
+    margin: 0 5px; 
+}
+
+#lastModified {
+    
+    color: yellow;
+}

@@ -1,5 +1,2 @@
+year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
 
-
-let currentYearElement = document.getElementById('currentYear');
-let currentYear = new Date().getFullYear();
-currentYearElement.textContent = currentYear;
