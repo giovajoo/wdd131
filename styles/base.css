@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+
+  header {
+    
+    padding: 20px;
+    background-color: rgba(10, 96, 142, 0.971);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+  }
+
+  header,
+  main {
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  nav {
+    background-color: #ecd333f0;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+
+  }
+
+  nav a:hover {
+    background-color: white;
+
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    padding: 2rem;
+    gap: 1.5rem;
+    
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    position: relative;
+    
+   
+
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(10, 96, 142, 0.971);
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.card .content-wrapper {
+  display: flex;
+  flex-direction: reverse;
+  align-items: center;
+
+}
+
+.card .content-wrapper p {
+  flex: 1;
+  margin-right: 1rem;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+.card .content-wrapper img {
+
+  max-width: 150px; 
+  height: auto; 
+  margin-top: 3rem;
+  
+    
+}
+
+.card h3 {
+
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 1px solid #bebebe;
+  padding: 4px;
+  
+}
+
+.card .country-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+}
+
+.card .country-wrapper p {
+  flex: 1;
+  margin-left: 1rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.card .country-wrapper figure img {
+
+  max-width: 200px; 
+  height: auto; 
+  margin-top: 0.5rem;
+  display: block;
+  
+}
+
+.country-wrapper figure {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.country-wrapper figcaption {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-top: -20px;
+  
+}
+
+.card ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+  text-align: center; 
+  margin-top: 40%;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem; 
+  
+}
+
+.card ul li a {
+  
+  color: #333; 
+  padding: 0.5rem 1rem; 
+  display: inline-block; 
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+ 
+    
+
+  
+
+
+
+
+
+
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(30, 126, 179, 0.971);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
