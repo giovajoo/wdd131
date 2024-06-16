@@ -1,2 +1,5 @@
-const year = document.querySelector("2024");
-alert(document.lastModified);
+
+
+let currentYearElement = document.getElementById('currentYear');
+let currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;
