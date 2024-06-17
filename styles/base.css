@@ -43,7 +43,7 @@
     justify-content: space-evenly;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-    margin-left: -15px;
+    margin-left: -16px;
     margin-top: 23px;
     margin-bottom: 4rem;
          
@@ -82,6 +82,7 @@
     position: relative;
     margin-top: 3.5rem;
     margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
   }
 
   .card h2 {
@@ -120,6 +121,7 @@
   max-width: 150px; 
   height: auto; 
   margin-top: 3rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 10, 0.5);
   
     
 }
@@ -155,6 +157,7 @@
   height: auto; 
   margin-top: 0.5rem;
   display: block;
+  
   
 }
 
