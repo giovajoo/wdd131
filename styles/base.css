@@ -11,15 +11,15 @@
     font-size: 1.1rem;
   }
 
-  header {
+  .site-header {
     
-    padding: 20px;
+    padding: 15px;
     background-color: #01478cf8;
     color: white;
-    display: flex;
+    text-align: center;
+    height: 70px;
     align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+
     
   }
 
@@ -27,36 +27,38 @@
     color: #e7e00ff0;
   }
 
-  header,
-  main {
-    margin: 0 auto;
-  }
   
-  h1 {
-    font-size: 2rem;
+  
+  .site-header h1 {
+    font-size: 28px;
     font-family: "Roboto", sans-serif;
+    
+    
   }
   
-  nav {
-    background-color: #ecd333f0;
-    margin: 0 auto;
-    max-width: 1500px;
+  .site-nav {
     display: flex;
-    justify-content: space-around;
+    background-color: #ecd333f0;
+    width: 103%;
+    justify-content: space-evenly;
     border: 1px solid rgba(0, 0, 0, 0.1);
-  
+    padding: 0;
+    margin-left: -15px;
+    margin-top: 23px;
+    margin-bottom: 4rem;
+         
   }
   
-  nav a {
-    display: block;
+  .site-nav a {
+   
     color: black;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     font-family: "Quicksand", sans-serif;
-
+  
   }
 
   nav a:hover {
@@ -76,11 +78,10 @@
     background-color: white;
     border-radius: 12px;
     border: 1px solid #ccc;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
-    
-   
-
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .card h2 {
@@ -102,7 +103,6 @@
 
 .card .content-wrapper {
   display: flex;
-  
   align-items: center;
 
 }
@@ -128,7 +128,7 @@
 
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-bottom: 1px solid #bebebe;
   padding: 4px;
   
@@ -197,19 +197,16 @@
 
   footer {
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     background-color: rgba(1, 71, 140, 0.971);
     font-family: "Quicksand", sans-serif;
 
   }
 
-
 footer p {
     margin: 5px 0; 
     font-size: 17px; 
     color: white;
-    
-
 }
 
 #lastModified {
