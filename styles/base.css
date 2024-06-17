@@ -68,7 +68,7 @@
   }
 
   .card {
-    background-color:rgb(235, 242, 247);
+    background-color: white;
     border-radius: 12px;
     border: 1px solid #ccc;
     padding: 2rem;
@@ -190,7 +190,6 @@
     text-align: center;
     padding: 10px;
     background-color: rgba(10, 96, 142, 0.971);
-    color: white;
     font-family: "Quicksand", sans-serif;
 
   }
@@ -199,11 +198,9 @@
 footer p {
     margin: 5px 0; 
     font-size: 17px; 
-}
-
-#currentyear {
+    color: white;
     
-    margin: 0 5px; 
+
 }
 
 #lastModified {
