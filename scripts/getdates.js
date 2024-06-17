@@ -1,7 +1,10 @@
 
-const currentyear = document.querySelector("#currentyear");
+var currentyear = new Date().getFullYear();
 
-alert(document.lastModified);
+var lastModifiedDate = document.lastModified;
+
+document.getElementById('currentyear').textContent = currentyear;
+document.getElementById('lastModified').textContent = 'lastModified: ' + lastModifiedDate;
 
 
 
