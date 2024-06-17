@@ -97,7 +97,7 @@
 
 .card .content-wrapper {
   display: flex;
-  direction: reverse;
+  
   align-items: center;
 
 }
