@@ -33,8 +33,44 @@ favoriteFood3.textContent = myInfo.favoriteFoods[2];
 let favoriteFood4 = document.createElement("li");
 favoriteFood4.textContent = myInfo.favoriteFoods[3];
 
+
 document.querySelector("#favorite-foods").appendChild(favoriteFood1);
 document.querySelector("#favorite-foods").appendChild(favoriteFood2);
 document.querySelector("#favorite-foods").appendChild(favoriteFood3);
 document.querySelector("#favorite-foods").appendChild(favoriteFood4);
+
+
+
+
+const foodsElement = document.querySelector("#favorite-foods");
+const placesElement = document.querySelector("#places-lived");
+function generateListMarkup(list, templateCallback) {
+    const htmlList = list.map(templateCallback);
+    return htmlList.join("");
+}
+function foodsTemplate(food) {
+    return `<li>${food}</li>`;
+}
+function placesTemplate(place) {
+    return `<dt>${place.place}</dt><dd>${place.length}</dd>`;
+}
+
+foodsElement.innerHTML = generateListMarkup(
+    myInfo.favoriteFoods,
+    foodsTemplate
+);
+placesElement.innerHTML = generateListMarkup(
+    myInfo.placesLived,
+    placesTemplate
+);
+
+
+
+
+
+
+
+
+
+
 
