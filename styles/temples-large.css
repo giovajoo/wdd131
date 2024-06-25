@@ -1,0 +1,44 @@
+@media screen and (min-width: 780px) {
+    header {
+        background-color: rgba(1, 71, 140, 0.971);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    nav ul {
+        
+        justify-content: flex-end;
+        flex-direction: row;
+
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    
+    }
+
+    .gallery {
+        
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    
+    }
+
+    main {
+        max-width: 780px; 
+        margin: 0 auto; 
+        padding: 10px; /* Espacio interno alrededor del contenido dentro del main */
+    }
+
+    
+}
+
+    
