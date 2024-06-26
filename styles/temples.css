@@ -80,7 +80,7 @@ header h1 {
     display: block;
 }
 
-#menu show::before {
+#menu.show::before {
     content: "X";
 }
 
