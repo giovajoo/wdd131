@@ -8,20 +8,27 @@
 
     }
 
-    nav ul {
+    .navigation {
         
         justify-content: flex-end;
         flex-direction: row;
+        display: flex;
 
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .navigation li {
+        
+        display: block;
+        flex: 1 1 100%
     }
 
-    nav a {
-        flex: 1 1 100%;
+    .navigation a {
+      text-align: center;
     
+    }
+
+    #menu {
+        display: none;
     }
 
     .gallery {
@@ -35,7 +42,7 @@
     main {
         max-width: 780px; 
         margin: 0 auto; 
-        padding: 10px; /* Espacio interno alrededor del contenido dentro del main */
+        padding: 10px; 
     }
 
     
