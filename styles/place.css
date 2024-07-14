@@ -1,3 +1,7 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-family);
    
    
 }
@@ -35,8 +39,7 @@ body {
   }
   .header h1 {
     font-size: 3.5rem;
-    font-family: "Roboto", sans-serif;
-    
+    font-family: var(--font-family);
    
 
   }
@@ -78,9 +81,6 @@ body {
     width: 100%;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   
-   
-  
-   
     
   }
 
@@ -92,8 +92,6 @@ body {
     width: 100px;
     height: 100px;
     margin: 10px auto;
-   
-   
    
     
   }
