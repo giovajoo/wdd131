@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload</title>
+    <meta name="description" content="The goal of this activity is to alleviate some of the load time by waiting until the page assets are actually needed by the user as they scroll.">
+    <meta name="author" content="Giovanna Paola De Joo Torres ">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazyload</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://placebear.com/400/600" alt="placeholder bear image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture> <img src="https://placebear.com/400/700" alt="placeholder bear image" loading="lazy" width="400" height="600"></picture>
+        <picture> <img src="https://placebear.com/400/800" alt="placeholder bear image" loading="lazy" width="400" height="600"></picture>
+        <picture> <img src="https://placebear.com/400/650" alt="placeholder bear image" loading="lazy" width="400" height="600"></picture>
+        <picture> <img src="https://placebear.com/400/750" alt="placeholder bear image" loading="lazy" width="400" height="600"></picture>
+        <picture> <img src="https://placebear.com/400/850" alt="placeholder bear image" loading="lazy" width="400" height="600"></picture>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🇵🇪 Giovanna Paola De Joo Torres 🇵🇪 Lima - Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
