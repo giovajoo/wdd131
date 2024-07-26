@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Form - Giovanna Paola De Joo Torres</title>
+    <meta name="description" content="WDD 131 - Form - Giovanna Paola De Joo Torres. This form is designed to give specific field requirements and submission confirmation with a counter.">
+    <meta name="author" content="Giovanna Paola De Joo Torres ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="review.html" method="get">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+    
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <div class ="rating-item">
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">★</label>
+                    </div>
+                    <div class="rating-item">
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">★★</label>
+                    </div>
+                    <div class="rating-item">
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">★★★</label>
+                    </div>
+                    <div class="rating-item">
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">★★★★</label>
+                    </div>
+                    <div class="rating-item">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★★★★★</label>
+                    </div>
+                </div>
+    
+                <label for="date-of-installation">Date of Installation</label>
+                <input type="date" id="date-of-installation" name="date-of-installation" required>
+                <br>
+    
+                <label>Which features did you find useful in the product? <span>(Check all that apply)</span></label>
+                <div class="features">
+                    <div class="feature-item">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                    </div>
+                    <div class="feature-item">
+                    <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                    <label for="ease-of-use">Ease of Use</label>
+                    </div>
+                    <div class="feature-item">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                    </div>
+                    <div class="feature-item">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                    </div>
+                </div>
+                <br>
+    
+                <label for="written-review">Written Review <span>(Optional)</span></label>
+                <textarea id="written-review" name="written-review"></textarea>
+    
+                <label for="your-name">Your Name <span>(Optional)</span></label>
+                <input type="text" id="your-name" name="your-name">
+
+                <button type="submit">Post Review</button>
+    
+            </form>
+        </div>
+    </main>
+        <footer>
+            <p>©2024 🇵🇪 Giovanna Joo 🇵🇪 Lima, Peru</p>
+            <p></p>
+        </footer>
+
+   
+    
+</body>
+</html>
