@@ -26,35 +26,48 @@ const products = [
   }
 ];
 
-window.onload = function() {
-  const productSelect = document.getElementById('product-name');
+
+function populateProductOptions() {
+  const selectElement = document.getElementById('product-name');
   
+ 
+  selectElement.innerHTML = '<option value="" disabled selected>Select a Product ...</option>';
+  
+
   products.forEach(product => {
       const option = document.createElement('option');
       option.value = product.id;
       option.textContent = product.name;
-      productSelect.appendChild(option);
+      selectElement.appendChild(option);
   });
-
-  
-  if (window.location.pathname.endsWith('review.html')) {
-      incrementReviewCounter();
-  }
-};
-
-
-function incrementReviewCounter() {
-  
-  let reviewCount = localStorage.getItem('reviewCount');
-  if (reviewCount) {
-      reviewCount = parseInt(reviewCount) + 1;
-  } else {
-      reviewCount = 1; 
-  }
-  
-  localStorage.setItem('reviewCount', reviewCount);
-
-  
-  document.getElementById('review-count').textContent = `Reviews completed: ${reviewCount}`;
 }
 
+
+document.addEventListener('DOMContentLoaded', populateProductOptions);
+
+
+function updateReviewCounter() {
+  
+  let reviewCount = parseInt(localStorage.getItem('reviewCount')) || 0;
+  
+  
+  reviewCount++;
+  
+  
+  localStorage.setItem('reviewCount', reviewCount);
+  
+ 
+  const counterElement = document.getElementById('review-counter');
+  if (counterElement) {
+      counterElement.textContent = `Total Reviews Completed: ${reviewCount}`;
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', updateReviewCounter);
+
+var currentyear = new Date().getFullYear();
+var lastModifiedDate = document.lastModified;
+
+document.getElementById('currentyear').textContent = currentyear;
+document.getElementById('lastModified').textContent = 'Last Modification: ' + lastModifiedDate;
